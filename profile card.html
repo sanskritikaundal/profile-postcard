@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: linear-gradient(135deg, #1f1b3a, #3a2f7d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 320px;
+            background: #2b2553;
+            padding: 30px;
+            border-radius: 18px;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .badge {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            background: #ffc107;
+            color: #000;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #00e5ff;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+        }
+
+        h4 {
+            font-size: 13px;
+            color: #cfcfcf;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            padding: 8px 18px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .primary {
+            background: #00e5ff;
+            color: #000;
+        }
+
+        .secondary {
+            background: transparent;
+            border: 1.5px solid #00e5ff;
+            color: #00e5ff;
+        }
+
+        .skills {
+            text-align: left;
+        }
+
+        .skills h5 {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skills li {
+            border: 1px solid #777;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <span class="badge">PRO</span>
+
+    <img src="sanskriti.jpeg" alt="Profile Image" class="profile-img">
+
+    <h2>Sanskriti</h2>
+    <h4>CHANDIGARH</h4>
+
+    <p>
+        User Interface Designer <br>
+        and Front-End Developer
+    </p>
+
+    <div class="buttons">
+        <button class="btn primary">Message</button>
+        <button class="btn secondary">Following</button>
+    </div>
+
+    <div class="skills">
+        <h5>SKILLS</h5>
+        <ul>
+            <li>UI / UX</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
